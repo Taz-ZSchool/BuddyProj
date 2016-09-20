@@ -19,6 +19,10 @@ public class AddressBook {
 	
 	public static void main(String args[]) {
 		System.out.print("Top Kek");
+		BuddyInfo bi = new BuddyInfo();
+		AddressBook ab = new AddressBook();
+		ab.addBuddy(bi);
+		ab.removeBuddy(bi);
 	}
 
 }
