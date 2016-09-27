@@ -26,5 +26,7 @@ public class BuddyInfo {
 		BuddyInfo me = new BuddyInfo();
 		System.out.println("Hello " + me.getName());
 	}
+	
+	public void newMethod() {}
 
 }
