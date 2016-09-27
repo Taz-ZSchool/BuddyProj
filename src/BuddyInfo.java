@@ -10,7 +10,7 @@ public class BuddyInfo {
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	//Change in order to pull
 	public int getAge() {
 		return age;
 	}
