@@ -1,8 +1,17 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-
-public class BuddyInfo {
+public class BuddyInfo implements ActionListener {
 	
-	private String name = "Taz";
+	private String name;
+	private int age;
+	
+	public BuddyInfo(String name, int age) {
+			this.name = name;
+			this.age = age;
+		
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -19,14 +28,12 @@ public class BuddyInfo {
 		this.age = age;
 	}
 
-	private int age = 20;
-
-	public static void main(String[] args) {
+	@Override
+	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		BuddyInfo me = new BuddyInfo();
-		System.out.println("Hello " + me.getName());
+		
 	}
-	
-	public void newMethod() {}
+
+
 
 }

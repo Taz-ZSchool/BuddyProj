@@ -1,11 +1,15 @@
 
 
-import java.awt.List;
+import java.util.List;
 import java.util.ArrayList;
 
 public class AddressBook {
 	
-	private ArrayList<BuddyInfo> buddies = new ArrayList<>();
+	private List<BuddyInfo> buddies;
+	
+	public AddressBook() { 
+		buddies = new ArrayList<>();
+	}
 	
 	
 	public void addBuddy(BuddyInfo bi) {
@@ -14,15 +18,6 @@ public class AddressBook {
 	
 	public void removeBuddy(BuddyInfo bi) {
 		buddies.remove(bi);
-		
-	}
-	
-	public static void main(String args[]) {
-		System.out.print("Top Kek");
-		BuddyInfo bi = new BuddyInfo();
-		AddressBook ab = new AddressBook();
-		ab.addBuddy(bi);
-		ab.removeBuddy(bi);
 	}
 
 }
