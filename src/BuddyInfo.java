@@ -32,4 +32,5 @@ public class BuddyInfo {
 		}
 		return new BuddyInfo(info.get(0), info.get(1), info.get(2));
 	}
-)
+}
+
