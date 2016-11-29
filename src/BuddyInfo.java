@@ -16,6 +16,11 @@ public class BuddyInfo {
 	public String toString() {
 		return name + sep + street + sep + number;
 	}
+	public String toXML() {
+		return	"<BuddyInfo> \n \t<name> " + name + " </name> \n \t"  + "<street> " + street + " </street> \n \t" 
+		+ "<number> " + number + " </number> \n<BuddyInfo>";
+		
+	}
 	
 	public boolean equals(Object o) {
 		BuddyInfo buddyInfo = (BuddyInfo) o;
@@ -31,6 +36,11 @@ public class BuddyInfo {
 			info.add(scanner.next());
 		}
 		return new BuddyInfo(info.get(0), info.get(1), info.get(2));
+	}
+	
+	public static void main(String args[]) {
+		BuddyInfo buddyInfo = new BuddyInfo("Taz", "1", "2");
+		System.out.println(buddyInfo.toXML());
 	}
 }
 
