@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -75,3 +76,28 @@ public class AddressBook implements Serializable {
 	}
 
 }
+=======
+
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class AddressBook {
+	
+	private List<BuddyInfo> buddies;
+	
+	public AddressBook() { 
+		buddies = new ArrayList<>();
+	}
+	
+	
+	public void addBuddy(BuddyInfo bi) {
+		buddies.add(bi);
+	}
+	
+	public void removeBuddy(BuddyInfo bi) {
+		buddies.remove(bi);
+	}
+
+}
+>>>>>>> branch 'master' of https://github.com/Taz-ZSchool/BuddyProj.git
